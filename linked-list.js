@@ -142,11 +142,22 @@ LinkedList.prototype.print = function() {
 //  6.4.  Por fim, imprimimos os valores;  **(' --> ') Tem somente função de tornar a saída mais legível;
 
 
-const list = new LinkedList();
-list.append(5);
-list.append(7);
-list.append(7);
-list.append(7);
-list.append(7);
-list.delete(0);
-list.print();
+
+
+
+//--------TEST-----------//
+
+// list.print();
+// const list = new LinkedList();
+// list.append(7);
+// list.append(7);
+// list.append(7);
+// list.append(7);
+// list.append(8);
+// list.prepend(5);
+// list.prepend(4);
+// list.prepend(3);
+// list.prepend(1);
+// list.delete(7);
+
+// list.print();
