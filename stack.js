@@ -64,7 +64,7 @@ Stack.prototype.isEmpty = function () {
 //  6.  IMPRIMINDO A PILHA:
 
 Stack.prototype.print = function () {
-    for (var i = 0; i < this.elements.length; i++) {
+    for (var i = this.elements.length -1 ; i >= 0; i--) {
         console.log('|', this.elements[i], '|');
         console.log('-----');
     }
@@ -75,34 +75,34 @@ Stack.prototype.print = function () {
 
 
 
-// //-----------TEST--------------//
+//-----------TEST--------------//
 
-// const stack = new Stack();
+const stack = new Stack();
 
-// // console.log('------VERIFICANDO SE A LISTA É VAZIA------' + '\n\n');
+// console.log('------VERIFICANDO SE A LISTA É VAZIA------' + '\n\n');
+// console.log('A LISTA ESTÁ VAZIA: ' + stack.isEmpty() + '\n\n');
+// console.log('------------------------------------------' + '\n\n');
+
+
+
+console.log('---- ADCIONANDO A, B, C, D ----');
+stack.push('A');
+stack.push('B');
+stack.push('C');
+stack.push('D');
+stack.print();
 // // console.log('A LISTA ESTÁ VAZIA: ' + stack.isEmpty() + '\n\n');
 // // console.log('------------------------------------------' + '\n\n');
 
 
 
-// // console.log('---- ADCIONANDO A, B, C, D ----');
-// stack.push('A');
-// stack.push('B');
-// stack.push('C');
-// stack.push('D');
-// // stack.print();
-// // console.log('A LISTA ESTÁ VAZIA: ' + stack.isEmpty() + '\n\n');
-// // console.log('------------------------------------------' + '\n\n');
+console.log('---- TESTANDO POP ----' + '\n\n');
+console.log('ITEM RETIRADO: ' + stack.pop() + '\n\n');
+console.log('lista após o pop:' + '\n');
+stack.print();
+console.log('----------------------' + '\n\n');
 
-
-
-// // console.log('---- TESTANDO POP ----' + '\n\n');
-// // console.log('ITEM RETIRADO: ' + stack.pop() + '\n\n');
-// // console.log('lista após o pop:' + '\n');
-// // stack.print();
-// // console.log('----------------------' + '\n\n');
-
-// console.log('---- PEEK ----' + '\n\n');
+//console.log('---- PEEK ----' + '\n\n');
 // console.log(stack.peek() + '\n\n');
 
 // console.log('---- LISTA ----')
