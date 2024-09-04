@@ -1,6 +1,6 @@
 function insertionSort(arr) {
     const arrayLength = arr.length;
-    var count = 1;
+    // var count = 1;
     
     for(let i = 1 ; i < arrayLength ; i++) {
         let key = arr[i];
@@ -9,7 +9,7 @@ function insertionSort(arr) {
         while (j >= 0 && arr[j] > key) {
             arr[j+1] = arr[j];
             j--;
-            count++;
+            // count++;
         }
         arr[j+1] = key;
     }
